@@ -38,11 +38,12 @@ function App() {
     }, 2000);
 
     return () => clearInterval(callerInterval)
+// eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
     <div className="App">
-      <h1>BINGO!!</h1>
+      <h1>SMIFFFY'S BINGO!!</h1>
       {cards.length > 0 && <CardGrid cards={cards} called={called}/>}
     </div>
   );
