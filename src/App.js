@@ -38,6 +38,7 @@ function App() {
     }, 2000);
 
     return () => clearInterval(callerInterval)
+// eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
